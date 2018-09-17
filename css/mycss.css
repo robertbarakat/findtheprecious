@@ -63,7 +63,12 @@ body{
     font-family: "AnironC";
 }
 
+.navbar-nav .nav-link {
+    padding-left: 5 px;
+}
+
 .nav-link {
+    border-left: 1px solid white; 
     margin-left: .1rem;
     margin-right: .1rem;
     padding-top: 0px;
@@ -73,7 +78,7 @@ body{
 }
 
 .active {
-   border-bottom: solid 2px white ;
+   text-decoration: underline;
 }
 
 /* CAROUSEL */
@@ -102,6 +107,7 @@ button{
 
 .badge {
     font-size: 115%;
+    color: #343a40;
     margin-bottom: 10px;
     padding-bottom: 10px;
 }
