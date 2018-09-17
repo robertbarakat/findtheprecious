@@ -1,0 +1,225 @@
+@font-face {
+    font-family: 'party_business';
+    src: url('partybusiness.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'AnironC';
+    src: url('anicb___.ttf') format('truetype'),
+        url('anicm___.ttf') format('truetype'),
+        url('anirb___.ttf') format('truetype'),
+        url('anirm___.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Tengwar';
+    src: url('tngan.ttf') format('truetype'),
+        url('tnganb.ttf') format('truetype'),
+        url('tnganbi.ttf') format('truetype'),
+        url('tngani.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+body{
+    font-family: "party_business";
+    background-color: #dddddd;
+}
+
+.mytitle{
+    font-family: "Tengwar";
+}
+
+.divisore {
+    margin-top:10px;
+    margin-bottom:10px;
+    border-bottom: 2px solid #ff5f01;
+    padding-top:10px;
+    padding-bottom: 10px;
+}
+
+.text-orange{
+    color: #ff5f01;
+}
+
+.bg-orange{
+    background-color: #ff5f01;
+}
+
+.bg-greyish{
+    background-color: #dddddd;
+}
+
+.mycenter{
+    text-align: center;
+}
+
+/* NAVBAR */
+.navbar{
+    font-family: "AnironC";
+}
+
+.nav-link {
+    margin-left: .1rem;
+    margin-right: .1rem;
+    padding-top: 0px;
+    padding-bottom: 2px;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.active {
+   border-bottom: solid 2px white ;
+}
+
+/* CAROUSEL */
+
+.carousel-caption{
+    font-size: 30px;
+}
+
+.carousel-caption h5{
+    font-size: 35px;
+}
+
+/* CARDS */
+.card{
+    margin-bottom: 10px; 
+    border-bottom: 3px solid #ff5f01;
+}
+
+.card .row {
+    padding: 10px;
+}
+
+button{
+    margin-bottom: 10px;
+}
+
+.badge {
+    font-size: 115%;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.badge:link{
+    color: #343a40;
+    text-decoration: none;
+}
+
+.badge:hover{
+    color: #ff5f01;
+    text-decoration: underline;
+}
+
+.badge:link .mytitle{
+    display: none;
+}
+
+.badge:hover .mytitle{
+    display: inline;
+    text-decoration: underline;
+}
+
+.rob-btn {
+        
+        padding: .25rem .5rem;
+        font-size: .675rem;
+        line-height: 1.5;
+        border-radius: .2rem;
+        color: #fff;
+        background-color: #6c757d;
+        border-color: #6c757d;
+}
+
+.pills {
+    text-align: center;
+}
+
+.card1 {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.card1:hover img {
+    opacity: 0.5;
+}
+
+.card-img-overlay {
+    color: white;
+}
+
+.card-img-overlay h5 {
+    background-color: black;
+    padding-top: 5px;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 60px;
+    opacity: 0.9;
+    display: none;
+}
+
+.card-img-overlay:hover h5 {
+    display: block;
+    font-weight: bolder;
+    
+}
+
+.card-img-overlay p {
+    color: white;
+    margin-top: 120px;
+    text-align: center;
+    opacity: 1;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.card-img-overlay:hover p {
+    margin-top: 200px;
+    color: #5c5555;
+}
+
+.card-img-overlay:hover .dead {
+    margin-top: 200px;
+    color: #5c5555;
+    text-decoration: line-through #ff5f01;
+}
+
+.media {
+    margin-bottom: 5px;
+}
+
+/* FOOTER*/
+
+footer{
+    margin-top: 20px;
+}
+
+footer p {
+    color: white;
+    padding-top: 10px;
+}
+
+footer ul {
+    list-style-type: none;
+    color: #fff;
+}
+
+footer ul li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 85%; 
+}
