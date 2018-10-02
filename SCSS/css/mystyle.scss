@@ -1,0 +1,128 @@
+@mixin ring($thick, $pixels, $radius, $bordercolor, $color) {
+  border: $thick solid $bordercolor;
+  box-shadow: $thick/2 $thick/2 $thick/5 $color;
+  border-radius: $radius;
+  width: $pixels;
+  height: $pixels;
+  margin-bottom: $pixels;
+}
+
+@mixin olympic($height, $left) {
+  position: relative;
+  border: 3px solid black;
+  border-radius: 50%;
+  height: $height;
+  width: $height;
+  left: $left;
+  margin-top: 10px;
+}
+
+@font-face {
+  font-family: "AnironC";
+  src: url("anicb___.ttf") format("truetype"),
+    url("anicm___.ttf") format("truetype"),
+    url("anirb___.ttf") format("truetype"),
+    url("anirm___.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+$orange: #ff5f01;
+
+body {
+  font-family: "AnironC";
+  background-color: transparent;
+}
+
+.divisore {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid $orange;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.text-orange {
+  color: $orange;
+}
+
+.bg-orange {
+  background-color: $orange;
+}
+
+.bg-greyish {
+  background-color: #dddddd;
+}
+
+.mycenter {
+  text-align: center;
+}
+
+/* NAVBAR */
+.navbar {
+  font-family: "AnironC";
+}
+
+.navbar-nav .nav-link {
+  padding-left: 1em;
+}
+
+.nav-link {
+  border-left: 1px solid white;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+  padding-top: 0px;
+  padding-bottom: 2px;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+/* EXERCISE SCSS */
+#exercise {
+  padding-top: 20px;
+  background-color: transparent;
+}
+
+.anneau {
+  @include ring(5px, 50px, 50%, $orange, grey);
+}
+
+.grosanneau {
+  @include ring(10px, 100px, 50%, yellow, grey);
+}
+
+
+  @for $i from 0 through 4 {
+    .olympus#{$i} {
+      @include olympic(
+        (($i * 10px) + 100),
+        ($i * -150px)
+      );
+  }
+}
+
+/* FOOTER*/
+
+footer {
+  bottom: 0;
+  width: 100%;
+
+  p {
+    color: white;
+    padding-top: 10px;
+  }
+  ul {
+    list-style-type: none;
+    color: #fff;
+
+    li {
+      padding-top: 5px;
+      padding-bottom: 5px;
+      font-size: 85%;
+    }
+  }
+}

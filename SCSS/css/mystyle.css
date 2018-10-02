@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "AnironC";
+  src: url("anicb___.ttf") format("truetype"), url("anicm___.ttf") format("truetype"), url("anirb___.ttf") format("truetype"), url("anirm___.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "AnironC";
+  background-color: transparent;
+}
+
+.divisore {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ff5f01;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.text-orange {
+  color: #ff5f01;
+}
+
+.bg-orange {
+  background-color: #ff5f01;
+}
+
+.bg-greyish {
+  background-color: #dddddd;
+}
+
+.mycenter {
+  text-align: center;
+}
+
+/* NAVBAR */
+.navbar {
+  font-family: "AnironC";
+}
+
+.navbar-nav .nav-link {
+  padding-left: 1em;
+}
+
+.nav-link {
+  border-left: 1px solid white;
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+  padding-top: 0px;
+  padding-bottom: 2px;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+/* EXERCISE SCSS */
+#exercise {
+  padding-top: 20px;
+  background-color: transparent;
+}
+
+.anneau {
+  border: 5px solid #ff5f01;
+  box-shadow: 2.5px 2.5px 1px grey;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 50px;
+}
+
+.grosanneau {
+  border: 10px solid yellow;
+  box-shadow: 5px 5px 2px grey;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 100px;
+}
+
+.olympus0 {
+  position: relative;
+  border: 3px solid black;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  left: 0px;
+  margin-top: 10px;
+}
+
+.olympus1 {
+  position: relative;
+  border: 3px solid black;
+  border-radius: 50%;
+  height: 110px;
+  width: 110px;
+  left: -150px;
+  margin-top: 10px;
+}
+
+.olympus2 {
+  position: relative;
+  border: 3px solid black;
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  left: -300px;
+  margin-top: 10px;
+}
+
+.olympus3 {
+  position: relative;
+  border: 3px solid black;
+  border-radius: 50%;
+  height: 130px;
+  width: 130px;
+  left: -450px;
+  margin-top: 10px;
+}
+
+.olympus4 {
+  position: relative;
+  border: 3px solid black;
+  border-radius: 50%;
+  height: 140px;
+  width: 140px;
+  left: -600px;
+  margin-top: 10px;
+}
+
+/* FOOTER*/
+footer {
+  bottom: 0;
+  width: 100%;
+}
+footer p {
+  color: white;
+  padding-top: 10px;
+}
+footer ul {
+  list-style-type: none;
+  color: #fff;
+}
+footer ul li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 85%;
+}
